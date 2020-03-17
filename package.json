@@ -1,0 +1,20 @@
+{
+  "name": "your-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "bottr": "^0.1.0",
+    "bottr-app": "^0.2.0"
+  },
+  "scripts": {
+    "start": "bottr-cli start",
+    "e2e": "concurrently \"npm start\" \"node tests/mainFlow.js && node tests/cancelFlowYes.js && node tests/cancelFlowNo.js \""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^5.1.0",
+    "puppeteer": "^2.1.1"
+  }
+}
